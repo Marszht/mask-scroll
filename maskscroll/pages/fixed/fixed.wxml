@@ -1,0 +1,24 @@
+<view class="cover">
+  <view class="dog-container">
+    <block wx:for="{{dogList}}" wx:key="index">
+      <view 
+        class="dog-box" 
+        bind:tap="handleOut" 
+        data-dog-name="{{item}}"
+        bind:tap="showMask">
+        {{item}}</view>
+    </block>
+  </view>
+  <view 
+    class="fixed-mask"
+    bind:tap="hideMsak"
+    wx:if="{{isShowMask}}"
+    catch:touchmove="stopMove">
+
+    <view class="mask-container" >
+      <view class="mask__item">
+        I am  {{dogName}}
+      </view>
+    </view>
+  </view>
+</view>
