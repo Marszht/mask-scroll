@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/scroll/scroll",
+    "pages/scroll1/scroll1",
     "pages/fixed/fixed",
     "pages/index/index",
     "pages/logs/logs"

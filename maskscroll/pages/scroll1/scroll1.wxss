@@ -1,0 +1,47 @@
+.dog-container {
+  overflow: hidden;
+
+}
+
+.dog-box {
+  width: 200rpx;
+  height: 200rpx;
+  background: greenyellow;
+  margin: 30rpx;
+  text-align: center;
+  line-height: 200rpx;
+}
+
+.fixed-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* height: 100vh; */
+  width: 100vw;
+  background: #333;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.bottom-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.mask-container {
+
+  /* position: fixed; */
+}
+
+
+.mask__item {
+  margin: 0 auto;
+  background-color: #ff0015;
+  text-align: center;
+  width: 500rpx;
+  height: 500rpx;
+  line-height: 500rpx;
+  margin-bottom: 20rpx;
+}

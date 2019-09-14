@@ -1,0 +1,48 @@
+<view class="cover">
+  <view class="dog-container {{isShowMask ? 'bottom-fixed' : ''}}">
+    <block wx:for="{{dogList}}" wx:key="index">
+      <view 
+        class="dog-box" 
+        bind:tap="handleOut" 
+        data-dog-name="{{item}}"
+        bind:tap="showMask">
+        {{item}}</view>
+    </block>
+  </view>
+  <view 
+    class="fixed-mask"
+    bind:tap="hideMsak"
+    wx:if="{{isShowMask}}"
+    >
+
+    <view class="mask-container" >
+      <!-- <scroll-view 
+        scroll-y
+        class="scroll" > -->
+      <view class="mask__item">
+        I am  {{dogName}}
+      </view>
+
+      <view class="mask__item">
+        I am  {{dogName}}
+      </view>
+
+      <view class="mask__item">
+        I am  {{dogName}}
+      </view>
+
+     <view class="mask__item">
+        I am  {{dogName}}
+      </view>
+
+      <view class="mask__item">
+        I am  {{dogName}}
+      </view>
+
+      <view class="mask__item">
+        I am  {{dogName}}
+      </view>
+    <!-- </scroll-view> -->
+    </view>
+  </view>
+</view>
